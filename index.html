@@ -19,6 +19,10 @@
 
       img {
         max-width: 100%;
+        display: block;
+        margin: 0 auto;
+        border-radius: 10px;
+        padding: 20px;
       }
       .main {
         margin: 50px auto;
@@ -26,6 +30,13 @@
         background-color: aliceblue;
         max-width: 900px;
         border-radius: 20px;
+      }
+      .photolink: {
+        transition: all 150ms ease-in-out;
+      }
+      .photolink:hover {
+        filter: contrast(70%);
+        transform: scale(1.08);
       }
       .darkthemebutton {
         display: block;
@@ -56,10 +67,12 @@
       <h1>Diamond Painting</h1>
       <h2>Personal Favorite Hobby</h2>
       <div>
-        <img
-          src="https://magenta-peony-f87aa3.netlify.app/images/pinkflowers.png"
-          alt="pinkflowers"
-        />
+        <a href="https://magenta-peony-f87aa3.netlify.app/" target="_blank">
+          <img
+            class="photolink"
+            src="https://magenta-peony-f87aa3.netlify.app/images/pinkflowers.png"
+            alt="pinkflowers"
+        /></a>
         <img
           src="https://magenta-peony-f87aa3.netlify.app/images/birds.png"
           alt="birds"
