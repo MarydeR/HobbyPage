@@ -20,6 +20,14 @@
         text-align: center;
       }
 
+      h1 {
+        font-size: 70px;
+        color: var(--main-color);
+      }
+      h2 {
+        text-decoration: underline;
+        font-size: 40px;
+      }
       img {
         max-width: 100%;
         display: block;
@@ -66,14 +74,14 @@
         padding: 10px;
         border-radius: 10px;
         font-size: 15px;
-        background-color: black;
         color: aliceblue;
         transition: all 200ms ease-in-out;
+        border: var(--main-color);
+        color: var(--main-color);
       }
       .themebutton:hover {
-        background-color: aliceblue;
-        color: var(--main-color);
-        border: var(--main-color);
+        background-color: black;
+        color: aliceblue;
       }
       .darkversion {
         background-color: aliceblue;
@@ -101,7 +109,13 @@
       }
       .dark .themebutton {
         background: rgba(255, 255, 255, 0.3);
-        color: black;
+        color: aliceblue;
+        transition: all 200ms ease-in-out;
+      }
+      .dark .themebutton:hover {
+        background-color: aliceblue;
+        color: var(--main-color);
+        border: var(--main-color);
       }
     </style>
   </head>
@@ -163,7 +177,7 @@
     <script>
       function changetheme() {
         let body = document.querySelector("body");
-        body.classList.add("dark");
+        body.classList.toggle("dark");
       }
 
       let themebutton = document.querySelector("#themebutton");
