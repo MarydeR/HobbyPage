@@ -8,10 +8,14 @@
 
     <style>
       :root {
-        --main-color: rgb(149, 118, 161);
+        --main-color: rgb(140, 108, 156);
       }
       body {
-        background-color: var(--main-color);
+        background: radial-gradient(
+          circle at 10% 20%,
+          rgb(178, 178, 212) 0%,
+          rgb(253, 222, 249) 79.5%
+        );
         font-family: "Times New Roman", Times, serif;
       }
 
@@ -97,7 +101,7 @@
       }
 
       .dark {
-        background: black;
+        background: linear-gradient(to top, #434343 0%, black 100%);
         color: aliceblue;
       }
 
