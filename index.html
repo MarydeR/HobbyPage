@@ -9,7 +9,7 @@
     <style>
       body {
         background-color: rgb(124, 86, 139);
-        font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+        font-family: "Times New Roman", Times, serif;
       }
 
       h1,
@@ -21,21 +21,36 @@
         max-width: 100%;
         display: block;
         margin: 0 auto;
-        padding: 20px;
+      }
+      p {
+        font-size: 20px;
+        line-height: 25px;
       }
       .main {
         margin: 50px auto;
         padding: 20px;
         background-color: aliceblue;
-        max-width: 900px;
+        max-width: 800px;
         border-radius: 20px;
       }
-      .photolink: {
+      .photolink {
         transition: all 150ms ease-in-out;
+        padding: 20px;
       }
       .photolink:hover {
         filter: contrast(80%);
         transform: scale(1.08);
+      }
+
+      .gridgallery {
+        padding: 20px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 10px;
+      }
+      .introline {
+        font-weight: bold;
+        font-size: 25px;
       }
       .darkthemebutton {
         display: block;
@@ -72,24 +87,26 @@
             src="https://magenta-peony-f87aa3.netlify.app/images/pinkflowers.png"
             alt="pinkflowers"
         /></a>
-        <img
-          src="https://magenta-peony-f87aa3.netlify.app/images/birds.png"
-          alt="birds"
-        />
-        <img
-          src="https://magenta-peony-f87aa3.netlify.app/images/falls.png"
-          alt="falls"
-        />
-        <img
-          src="https://magenta-peony-f87aa3.netlify.app/images/mountain.png"
-          alt="mountain"
-        />
-        <img
-          src="https://magenta-peony-f87aa3.netlify.app/images/londonbridge.png"
-          alt="london"
-        />
+        <div class="gridgallery">
+          <img
+            src="https://magenta-peony-f87aa3.netlify.app/images/birds.png"
+            alt="birds"
+          />
+          <img
+            src="https://magenta-peony-f87aa3.netlify.app/images/falls.png"
+            alt="falls"
+          />
+          <img
+            src="https://magenta-peony-f87aa3.netlify.app/images/mountain.png"
+            alt="mountain"
+          />
+          <img
+            src="https://magenta-peony-f87aa3.netlify.app/images/londonbridge.png"
+            alt="london"
+          />
+        </div>
       </div>
-      <span>What Is Diamond Painting?</span>
+      <span class="introline">What Is Diamond Painting?</span>
       <p>
         Diamond painting is a simple and addictive hobby that has taken the
         crafting world by storm. Creating a sparkling masterpiece is as easy as
@@ -103,8 +120,6 @@
         diamond artworks that shimmer, sparkle and shine when they paint with
         diamonds.
       </p>
-
-      <button>Learn</button>
     </div>
     <button id="darkbutton" class="darkthemebutton">Dark Theme</button>
 
