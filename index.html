@@ -5,34 +5,96 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Diamong Painting Hobby</title>
+
+    <style>
+      body {
+        background-color: rgb(124, 86, 139);
+        font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+      }
+
+      h1,
+      h2 {
+        text-align: center;
+      }
+
+      img {
+        max-width: 100%;
+      }
+      .main {
+        margin: 50px auto;
+        padding: 20px;
+        background-color: aliceblue;
+        max-width: 900px;
+        border-radius: 20px;
+      }
+      .darkthemebutton {
+        display: block;
+        margin: 0 auto;
+        padding: 10px;
+        border-radius: 10px;
+        font-size: 15px;
+        background-color: black;
+        color: aliceblue;
+      }
+
+      .darkversion {
+        background-color: aliceblue;
+        color: black;
+      }
+
+      footer {
+        font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+          "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+        text-align: center;
+        font-size: 10px;
+        padding: 20px;
+      }
+    </style>
   </head>
   <body>
-    <h1>Diamond Painting</h1>
-    <h2>Personal Favorite Hobby</h2>
+    <div class="main">
+      <h1>Diamond Painting</h1>
+      <h2>Personal Favorite Hobby</h2>
+      <div>
+        <img
+          src="https://magenta-peony-f87aa3.netlify.app/images/pinkflowers.png"
+          alt="pinkflowers"
+        />
+        <img
+          src="https://magenta-peony-f87aa3.netlify.app/images/birds.png"
+          alt="birds"
+        />
+        <img
+          src="https://magenta-peony-f87aa3.netlify.app/images/falls.png"
+          alt="falls"
+        />
+        <img
+          src="https://magenta-peony-f87aa3.netlify.app/images/mountain.png"
+          alt="mountain"
+        />
+        <img
+          src="https://magenta-peony-f87aa3.netlify.app/images/londonbridge.png"
+          alt="london"
+        />
+      </div>
+      <span>What Is Diamond Painting?</span>
+      <p>
+        Diamond painting is a simple and addictive hobby that has taken the
+        crafting world by storm. Creating a sparkling masterpiece is as easy as
+        affixing vibrantly colored resin rhinestones to a self-adhesive canvas
+        with a diamond art kit. The canvas is printed with the design as well as
+        symbols to let you know exactly which color to place in each spot.
+        <br />
+        A relatively new art form to the craft industry, diamond art has rapidly
+        become a favorite among beginner and experienced hobbyists alike. It
+        does not require any special skills, and anyone can make beautiful
+        diamond artworks that shimmer, sparkle and shine when they paint with
+        diamonds.
+      </p>
 
-    <div>
-      <img src="/img/pinkflowers.png" alt="pinkflowers" />
-      <img src="img/birds.png" alt="birds" />
-      <img src="img/falls.png" alt="falls" />
-      <img src="img/mountain.png" alt="mountain" />
-      <img src="img/londonbridge.png" alt="london" />
+      <button>Learn</button>
     </div>
-
-    <span>What Is Diamond Painting?</span>
-    <p>
-      Diamond painting is a simple and addictive hobby that has taken the
-      crafting world by storm. Creating a sparkling masterpiece is as easy as
-      affixing vibrantly colored resin rhinestones to a self-adhesive canvas
-      with a diamond art kit. The canvas is printed with the design as well as
-      symbols to let you know exactly which color to place in each spot.
-      <br />
-      A relatively new art form to the craft industry, diamond art has rapidly
-      become a favorite among beginner and experienced hobbyists alike. It does
-      not require any special skills, and anyone can make beautiful diamond
-      artworks that shimmer, sparkle and shine when they paint with diamonds.
-    </p>
-
-    <button>Dark Theme</button>
+    <button id="darkbutton" class="darkthemebutton">Dark Theme</button>
 
     <footer>
       Page coded by MDR -
